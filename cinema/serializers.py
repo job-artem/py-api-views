@@ -9,9 +9,6 @@ class MovieSerializer(serializers.ModelSerializer):
         fields = ("id", "title", "description", "duration")
 
 
-
-
-
 class ActorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Actor
@@ -28,6 +25,3 @@ class CinemaHallSerializer(serializers.ModelSerializer):
     class Meta:
         model = CinemaHall
         fields = "__all__"
-
-
-
